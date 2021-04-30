@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='style_tetris.css' />
+</head>
+<body>
+    <h2>Tetris Game</h2>
+    <canvas id="board" width='300' height='600'></canvas>
+    <table style="width: 200; height: 300;" border="0">
+        <tr>
+            <td>NEXT</td>
+        </tr>
+        <tr>
+            <td><canvas id="next" width="100" height="100"></canvas></td>
+        </tr>
+        <tr>
+            <td>SCORE : <span id="score">0</span></td>
+        </tr>
+        <tr>
+            <td><button id="playbutton" onclick="playButtonClicked();">Play</button></td>
+        </tr>
+    </table>
+    <script src='tetrisjs/tetris.js'></script>
+    <script src='tetrisjs/controller.js'></script>
+    <script src='tetrisjs/render.js'></script>
+</body>
+</html>
